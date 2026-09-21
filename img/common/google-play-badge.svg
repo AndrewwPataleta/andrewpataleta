@@ -1,0 +1,11 @@
+<svg width="180" height="54" viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="178" height="52" rx="10" fill="#000" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="60" y="22" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" letter-spacing="0.5">Get it on</text>
+  <text x="60" y="40" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">Google Play</text>
+  <g transform="translate(16 12)">
+    <polygon points="0,0 0,30 24,15" fill="#34A853"/>
+    <polygon points="0,0 12,12 24,15" fill="#4285F4"/>
+    <polygon points="0,30 12,18 24,15" fill="#FBBC05"/>
+    <polygon points="12,12 12,18 24,15" fill="#EA4335"/>
+  </g>
+</svg>

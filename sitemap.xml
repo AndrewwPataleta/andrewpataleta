@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://patstudio.tech/en</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://patstudio.tech/es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://patstudio.tech/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://patstudio.tech/fr"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://patstudio.tech/pt"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://patstudio.tech/zh"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://patstudio.tech/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en"/>
+  </url>
+
+  <url>
+    <loc>https://patstudio.tech/en/projects</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/projects"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/projects"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://patstudio.tech/es/projects"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://patstudio.tech/de/projects"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://patstudio.tech/fr/projects"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://patstudio.tech/pt/projects"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://patstudio.tech/zh/projects"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://patstudio.tech/ar/projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/projects"/>
+  </url>
+
+  <url>
+    <loc>https://patstudio.tech/en/projects/pattybox</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/projects/pattybox"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/projects/pattybox"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/projects/pattybox"/>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/projects/giftx-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/projects/giftx-ai"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/projects/giftx-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/projects/giftx-ai"/>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/projects/space-attack</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/projects/space-attack"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/projects/space-attack"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/projects/space-attack"/>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/projects/yobooki</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/projects/yobooki"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/projects/yobooki"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/projects/yobooki"/>
+  </url>
+
+  <url>
+    <loc>https://patstudio.tech/en/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://patstudio.tech/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://patstudio.tech/ru/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://patstudio.tech/en/blog"/>
+  </url>
+
+  <url>
+    <loc>https://patstudio.tech/en/modern-ai-it-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/modern-it-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/ai-product-strategy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/modern-data-stack</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/ai-ux-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/edge-ai-apps</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/llm-operations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://patstudio.tech/en/web3-nft-crypto-growth</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

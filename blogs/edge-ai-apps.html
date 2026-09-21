@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge AI Apps Project</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "ProximaNova", Arial, sans-serif;
+        background: #f7f7f7;
+        color: #213243;
+        line-height: 1.6;
+      }
+      .page {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .hero {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 1fr);
+        align-items: center;
+      }
+      .hero img {
+        width: 100%;
+        border-radius: 20px;
+        border: 8px solid #fff;
+        object-fit: cover;
+      }
+      .tag {
+        display: inline-block;
+        background: rgba(127, 108, 253, 0.12);
+        color: #7f6cfd;
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+      }
+      h1 {
+        font-size: 40px;
+        margin: 16px 0;
+      }
+      .section {
+        margin-top: 32px;
+        background: #fff;
+        padding: 24px;
+        border-radius: 16px;
+      }
+      .gallery {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="hero">
+        <div>
+          <span class="tag">Edge AI</span>
+          <h1>Edge AI for Faster, Private Apps</h1>
+          <p>
+            We delivered a hybrid edge/cloud architecture that keeps sensitive data on-device while
+            maintaining a seamless user experience. The result is faster inference, lower latency,
+            and improved privacy for mobile users.
+          </p>
+        </div>
+        <img src="../img/posts/illustration.png" alt="Edge AI apps" />
+      </div>
+
+      <section class="section">
+        <h2>Project highlights</h2>
+        <ul>
+          <li>Optimized on-device models through quantization and pruning.</li>
+          <li>Designed fallback flows when network connectivity drops.</li>
+          <li>Built a secure update mechanism for model refreshes.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Visuals</h2>
+        <div class="gallery">
+          <img src="../img/posts/img1.webp" alt="Edge inference flow" />
+          <img src="../img/posts/img2.webp" alt="Device performance" />
+          <img src="../img/posts/img3.webp" alt="Hybrid architecture" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
