@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Andrew Pataleta — Full-Stack & AI Engineer</title>
+<meta name="description" content="Andrew Pataleta, full-stack and AI engineer. I build and ship products end to end, solo, from the first idea to live. AI apps, real-time games, e-commerce and SaaS." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#07090d; --bg-2:#0d1017; --card:#0f131b; --line:#1c222d; --line-2:#2a323f;
+    --ink:#eef2f7; --ink-2:#c3cad6; --muted:#8792a3; --accent:#4f8cff; --accent-2:#7aa9ff;
+    --radius:16px; --radius-sm:10px; --container:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--container);margin:0 auto;padding:0 22px}
+  .display{font-family:"Manrope",sans-serif;letter-spacing:-.02em}
+
+  header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+    background:color-mix(in oklab, var(--bg) 82%, transparent);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:"Manrope";font-weight:800;font-size:17px;letter-spacing:-.02em}
+  .brand span{color:var(--accent)}
+  .navlinks{display:flex;gap:26px;align-items:center}
+  .navlinks a{color:var(--ink-2);font-size:14px;font-weight:500}
+  .navlinks a:hover{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#04102b;
+    font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;transition:transform .15s ease,background .15s ease}
+  .btn:hover{background:var(--accent-2);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2)}
+  .btn.ghost:hover{border-color:var(--accent);background:transparent}
+  @media(max-width:640px){.navlinks a:not(.btn){display:none}}
+
+  .hero{padding:96px 0 64px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:-20% 30% auto -10%;height:520px;
+    background:radial-gradient(600px 340px at 20% 0, #14294d 0%, transparent 70%);pointer-events:none}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--accent-2);border:1px solid var(--line-2);border-radius:999px;padding:6px 14px;margin-bottom:22px}
+  .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e22}
+  h1{font-size:clamp(36px,6.4vw,64px);line-height:1.03;margin:0 0 20px;max-width:16ch}
+  .lead{font-size:clamp(16px,2.1vw,20px);color:var(--ink-2);max-width:60ch;margin:0 0 30px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:52px;border-top:1px solid var(--line);padding-top:26px}
+  .stats b{font-family:"Manrope";font-weight:800;font-size:26px;display:block}
+  .stats span{color:var(--muted);font-size:13px}
+
+  section{padding:56px 0}
+  .sec-head{margin-bottom:28px}
+  .sec-head h2{font-size:clamp(24px,4vw,34px);margin:0 0 8px}
+  .sec-head p{color:var(--muted);margin:0;max-width:60ch}
+
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+    transition:transform .18s ease,border-color .18s ease}
+  .proj:hover{transform:translateY(-3px);border-color:var(--line-2)}
+  .proj .tag{font-size:12px;font-weight:600;color:var(--accent-2);letter-spacing:.04em;text-transform:uppercase}
+  .proj h3{font-family:"Manrope";font-size:21px;margin:8px 0 8px}
+  .proj p{color:var(--ink-2);font-size:14.5px;margin:0 0 16px}
+  .links{display:flex;gap:8px;flex-wrap:wrap}
+  .links a{font-size:12.5px;font-weight:600;color:var(--ink-2);border:1px solid var(--line-2);
+    border-radius:999px;padding:6px 12px;transition:.15s}
+  .links a:hover{color:var(--ink);border-color:var(--accent)}
+  .proj.wide{grid-column:1/-1}
+
+  .about{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:34px}
+  .about p{color:var(--ink-2);font-size:15.5px;max-width:72ch;margin:0 0 14px}
+  .about p:last-child{margin-bottom:0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .chip{font-size:12.5px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:6px 11px}
+
+  .contact{text-align:center;padding:72px 0 40px}
+  .contact h2{font-size:clamp(26px,4.5vw,40px);margin:0 0 14px}
+  .contact p{color:var(--ink-2);max-width:52ch;margin:0 auto 26px}
+
+  footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer a{color:var(--ink-2)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Andrew<span>.</span>Pataleta</div>
+    <nav class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a class="btn" href="mailto:andreww.pataleta@gmail.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot"></span> Available for freelance</span>
+      <h1 class="display">I build and ship products end to end.</h1>
+      <p class="lead">I'm Andrew, a full-stack and AI engineer. I take an idea and turn it into something real and live, the backend, the web app, the mobile apps and the AI, mostly on my own. Below is some of the work I've built and shipped.</p>
+      <div class="cta">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn ghost" href="https://github.com/AndrewwPataleta" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="stats">
+        <div><b>10k+</b><span>installs on GiftX</span></div>
+        <div><b>Web · iOS · Android</b><span>ship on every platform</span></div>
+        <div><b>Solo</b><span>idea to production</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="display">Selected work</h2>
+        <p>Real products, built and shipped. Every one of these I owned end to end.</p>
+      </div>
+      <div class="grid">
+
+        <div class="proj wide">
+          <span class="tag">AI · Mobile · Web</span>
+          <h3>GiftX</h3>
+          <p>An AI shopping app I built from scratch and grew from nothing to 10k+ installs. The LLM is wired into the product itself, with a recommender that learns each user's taste. Runs on web and native iOS and Android.</p>
+          <div class="links">
+            <a href="https://giftx.tech" target="_blank" rel="noopener">Web</a>
+            <a href="https://play.google.com/store/apps/details?id=giftx.tech" target="_blank" rel="noopener">Android</a>
+            <a href="https://apps.apple.com/us/app/giftx-ai-gift-finder/id6754931889" target="_blank" rel="noopener">iOS</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <span class="tag">Real-time · 3D · Game</span>
+          <h3>Space Attack</h3>
+          <p>A real-time multiplayer game built from scratch. I made the 3D models and even built my own in-browser level editor, plus the in-game economy and payments.</p>
+          <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=app.spaceattack" target="_blank" rel="noopener">Android</a>
+            <a href="https://apps.apple.com/us/app/space-attack-galaxy-shooter/id6793962515" target="_blank" rel="noopener">iOS</a>
+            <a href="https://studio.spaceattack.app/#studio" target="_blank" rel="noopener">Level editor</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <span class="tag">SaaS · E-commerce</span>
+          <h3>Yourmunity</h3>
+          <p>My own product on the Shopify App Store, a community layer for brands. Built end to end and shipped to a full public release, used by real merchants.</p>
+          <div class="links">
+            <a href="https://yourmunity.com" target="_blank" rel="noopener">Website</a>
+            <a href="https://apps.shopify.com/yourmunity" target="_blank" rel="noopener">Shopify</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <span class="tag">E-commerce · Stripe</span>
+          <h3>PattyBox</h3>
+          <p>An online bakery store I built with online ordering, a product catalog and Stripe checkout, plus a content engine driving organic traffic.</p>
+          <div class="links">
+            <a href="https://pattybox.com" target="_blank" rel="noopener">Website</a>
+          </div>
+        </div>
+
+        <div class="proj">
+          <span class="tag">Backend · API</span>
+          <h3>PostGramX</h3>
+          <p>A NestJS and PostgreSQL marketplace backend with escrow payments and a full deal-lifecycle state machine. Clean, readable code, public on GitHub.</p>
+          <div class="links">
+            <a href="https://github.com/AndrewwPataleta/postgramx-backend" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="display">About</h2>
+      </div>
+      <div class="about">
+        <p>I've been building sites and apps for years, mostly solo, from the first idea all the way to a live product. I love this field and I've grown wide rather than into one narrow lane, comfortable across the whole stack from infrastructure and backend to frontend and mobile.</p>
+        <p>Over the last year I rebuilt my workflow around AI tools like Claude Code and Cursor, so I ship full features in days. But I'm not just prompting. I bring clean architecture and clean code, I apply the right algorithms and keep an eye on performance, and I read everything the AI generates so I know when it's wrong and why.</p>
+        <div class="chips">
+          <span class="chip">TypeScript</span><span class="chip">React / Next.js</span><span class="chip">Node / NestJS</span>
+          <span class="chip">React Native</span><span class="chip">Postgres / Supabase</span><span class="chip">MongoDB</span>
+          <span class="chip">OpenAI / Claude</span><span class="chip">RAG / Embeddings</span><span class="chip">Stripe</span>
+          <span class="chip">Vercel / Railway</span><span class="chip">3D / three.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="display">Let's build something.</h2>
+      <p>Got a product or an idea you want shipped? I'm available for freelance work and quick to reach.</p>
+      <div class="cta" style="justify-content:center">
+        <a class="btn" href="mailto:andreww.pataleta@gmail.com">andreww.pataleta@gmail.com</a>
+        <a class="btn ghost" href="https://github.com/AndrewwPataleta" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:10px">
+    <span>© Andrew Pataleta</span>
+    <span>Full-Stack &amp; AI Engineer · <a href="mailto:andreww.pataleta@gmail.com">andreww.pataleta@gmail.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
